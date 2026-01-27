@@ -3,56 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Responsive Template</title>
+    <title>SATIC | TECH-BUSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="logo">SATIC</div>
-        <nav>
+        <button class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#">Contact</a>
+            <a href="#" class="nav-cta">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>TECH - BUSS</h1>
-        <p>This is a placeholder sub-headline meant to grab attention and explain the primary value proposition of your amazing website.</p>
-        <a href="#" class="btn">Get Started</a>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>TECH - BUSS</h1>
+                <p>Empowering your digital presence with modern, scalable, and high-performance web solutions.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
 
-    <section class="content-section" id="about">
-        <h2 style="text-align: center;">Our Expertise</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Responsive Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+<!-- Card section -->
+        <section class="content-section" id="about">
+            <h2 class="section-title">Our Expertise</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Fluid layouts that adapt perfectly to any screen size, from mobile to ultra-wide monitors.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Modern Styling</h3>
+                    <p>Utilizing CSS variables and modern design tokens for a cohesive and professional look.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Clean Code</h3>
+                    <p>Optimized, semantic HTML and modular CSS built for speed and long-term maintainability.</p>
+                </article>
             </div>
-            <div class="card">
-                <h3>Modern Styling</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </section>
+       
+        <!-- Service -->
+        <section class="services-banner" id="services">
+            <div class="banner-inner">
+                <h2>Simple & Effective</h2>
+                <p>We strip away the noise to focus on what matters: your growth and user experience.</p>
             </div>
-            <div class="card">
-                <h3>Clean Code</h3>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="content-section" id="services" style="background-color: var(--secondary-bg);">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2>Simple & Effective</h2>
-            <p style="margin-top: 1.5rem;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-        </div>
-    </section>
+<!-- Conact us -->
+     <section class="cta-section" id="contact">
+      <p>Contact Us</p>
+      <button>Click</button>
+     </section>
 
     <footer>
-        <p>&copy; 2026 TECH - BUSS. All rights reserved.</p>
-        <p style="margin-top: 10px;">Built with passion and clean code.</p>
+        <div class="footer-content">
+            <p>&copy; 2026 TECH - BUSS. All rights reserved.</p>
+            <p class="footer-sub">Built with passion and clean code.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
