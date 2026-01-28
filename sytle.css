@@ -1,3 +1,8 @@
+* Enhanced Colorful Design */
+.service-card-1:hover { border-color: #f472b6; box-shadow: 0 0 20px rgba(244, 114, 182, 0.3); }
+.service-card-2:hover { border-color: #38bdf8; box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); }
+.service-card-3:hover { border-color: #fbbf24; box-shadow: 0 0 20px rgba(251, 191, 36, 0.3); }
+
 /* Custom Properties */
 :root {
     --primary: #6366f1;
@@ -290,26 +295,27 @@ footer {
     border-radius: 2px;
 }
 
+/* Fix Mobile Menu Positioning */
 @media (max-width: 768px) {
-    .menu-toggle { display: flex; }
-    
     .nav-menu {
-        display: none; /* JS will toggle this */
-        position: absolute;
+        display: none; 
+        position: absolute; /* Changed from fixed to absolute for better flow */
         top: 100%;
         left: 0;
         width: 100%;
         flex-direction: column;
-        background: var(--bg-dark);
-        padding: 2rem;
-        border-bottom: 1px solid var(--border);
+        background: rgba(15, 23, 42, 0.95);
+        padding: 2rem 0;
+        border-bottom: 2px solid var(--primary);
+        backdrop-filter: blur(10px);
     }
 
     .nav-menu.active {
-        display: flex;
+        display: flex; /* Shows the menu when 'active' class is added via JS */
     }
+}
 
-    .hero-btns {
-        flex-direction: column;
-    }
+/* Add Smooth Scroll to HTML */
+html {
+    scroll-behavior: smooth;
 }
