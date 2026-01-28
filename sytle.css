@@ -51,6 +51,17 @@ header {
     color: var(--primary);
 }
 
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001; /* Stay above the menu */
+}
+
+
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -278,8 +289,15 @@ footer {
 
 }
 
+@media(max-width:768px){
+    .footer-container{
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+}
 /* Responsive Menu Toggle */
-.menu-toggle {
+/* .menu-toggle {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -293,10 +311,11 @@ footer {
     height: 3px;
     background: var(--text-main);
     border-radius: 2px;
-}
+} */
 
 /* Fix Mobile Menu Positioning */
 @media (max-width: 768px) {
+    .hamburger{ display: block; }
     .nav-menu {
         display: none; 
         position: absolute; /* Changed from fixed to absolute for better flow */
@@ -312,6 +331,13 @@ footer {
 
     .nav-menu.active {
         display: flex; /* Shows the menu when 'active' class is added via JS */
+    }
+     .nav-menu a {
+        font-size: 24px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
     }
 }
 
