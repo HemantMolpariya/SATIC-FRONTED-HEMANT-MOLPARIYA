@@ -218,54 +218,6 @@ header {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
-    padding: 8rem 8%;
-    background: #0b0f1a;
-}
-
-.choose-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.choose-item {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 12px;
-}
-
-.choose-item .number {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--primary);
-    opacity: 0.5;
-}
-
-.choose-text h4 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-}
-
-/* Fix Mobile Nav positioning */
-@media (max-width: 768px) {
-    .nav-menu {
-        top: 70px; /* Adjust based on header height */
-        height: auto;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    }
-    
-    .choose-container {
-        flex-direction: column;
-    }
 
 /* Footer */
 footer {
