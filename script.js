@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // FIX: Changed 'humburger' to 'hamburger' to match HTML ID
-    const menuToggle = document.getElementById('hamburger');
+    const menuToggle = document.getElementById('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
     if (menuToggle) {
