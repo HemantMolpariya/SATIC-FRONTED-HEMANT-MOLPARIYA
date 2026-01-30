@@ -36,10 +36,47 @@ body {
     z-index: 100;
 }
 
-.nav { display: flex; gap: 2rem; }
-.nav a { text-decoration: none; color: var(--text-dim); transition: 0.3s; }
-.nav a:hover { color: var(--primary); }
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001; /* Stay above the menu */
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
 /* Hero */
 .hero {
     height: 80vh;
