@@ -68,6 +68,11 @@ body {
     gap: 2rem;
 }
 
+/* Buttons */
+.btn { padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; display: inline-block; cursor: pointer; border: none; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-outline { border: 1px solid var(--border); color: white; }
+
 /* Cards */
 .card, .project-card, .stats-card {
     background: var(--bg-card);
