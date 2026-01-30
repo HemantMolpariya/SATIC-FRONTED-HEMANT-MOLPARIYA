@@ -30,12 +30,11 @@ body {
     padding: 1rem 5%;
     position: sticky;
     top: 0;
-    background: rgba(3, 7, 18, 0.8);
+    background: rgba(3, 7, 18, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
-    z-index: 100;
+    z-index: 1000;
 }
-
 .hamburger {
   display: none; /* Hidden by default on desktop */
   background: none;
@@ -64,18 +63,19 @@ body {
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.nav-links a.active {
-  border-bottom: 2px solid #fff;
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary);
 }
 /* Hero */
 .hero {
@@ -223,25 +223,25 @@ body{
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hamburger { 
-        display: block; 
-        z-index: 101; /* Ensure button stays above menu */
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
     }
 
-    .nav { 
-        display: none; /* Hidden by default on mobile */
+    .nav-links {
+        display: none; /* Hide links by default */
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Sits right under the header */
+        top: 100%;
         left: 0;
         width: 100%;
-        background: var(--bg-dark);
+        background: var(--bg-card);
         padding: 2rem;
+        text-align: center;
         border-bottom: 1px solid var(--border);
     }
 
-    /* This class is toggled by JavaScript */
-    .nav.active { 
-        display: flex; 
+    /* When JS adds the .active class */
+    .nav-links.active {
+        display: flex;
     }
 }
