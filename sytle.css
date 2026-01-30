@@ -185,11 +185,26 @@ body{
 
 
 /* Responsive */
-.hamburger { display: none; font-size: 1.5rem; color: white; background: none; border: none; }
-
 @media (max-width: 768px) {
-    .hamburger { display: block; }
-    .nav { display: none; }
-    .about-grid { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
+    .hamburger { 
+        display: block; 
+        z-index: 101; /* Ensure button stays above menu */
+    }
+
+    .nav { 
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Sits right under the header */
+        left: 0;
+        width: 100%;
+        background: var(--bg-dark);
+        padding: 2rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    /* This class is toggled by JavaScript */
+    .nav.active { 
+        display: flex; 
+    }
 }
