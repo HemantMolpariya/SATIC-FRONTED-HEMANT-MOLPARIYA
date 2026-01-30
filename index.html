@@ -8,137 +8,114 @@
 </head>
 <body>
 
-   <header>
+ <header class="header">
         <div class="logo">SATIC</div>
-          <!-- Hamburger -->
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      ☰
-    </button>
-        </button>
-        <nav class="nav-menu">
-            <a href="#">Home</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+        <nav class="nav" id="nav-menu">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#services">Expertise</a>
+            <a href="#works">Work</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
                 <h1>TECH - BUSS</h1>
-                <p>Empowering your digital presence with modern, scalable, and high-performance web solutions.</p>
-                <div class="hero-btns">
-                    <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                <p>Bridging the gap between design and engineering with premium web solutions.</p>
+                <div class="btn-group">
+                    <a href="#works" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
             </div>
         </section>
 
-<!-- Card section -->
-        <section class="content-section" id="about">
-            <h2 class="section-title">Our Expertise</h2>
-            <div class="grid-container">
+        <section class="section container" id="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge">ABOUT ME</span>
+                    <h2>Bridging the gap between design and engineering.</h2>
+                    <p>I build scalable applications with a focus on animation, accessibility, and performance using modern JavaScript ecosystems.</p>
+                    <div class="pill-group">
+                        <span class="pill">Clean Code</span>
+                        <span class="pill">Modern Design</span>
+                        <span class="pill">Performance</span>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <span class="icon">👥</span>
+                    <h3>50+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="services">
+            <h2 class="section-title">My Expertise</h2>
+            <div class="grid">
                 <article class="card">
-                    <div class="card-icon">📱</div>
-                    <h3>Responsive Design</h3>
-                    <p>Fluid layouts that adapt perfectly to any screen size, from mobile to ultra-wide monitors.</p>
+                    <div class="card-icon">💻</div>
+                    <h3>Frontend Dev</h3>
+                    <p>Vue, Tailwind, and React focusing on the visual layer and interactivity.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <p>Node, Python, and SQL for server-side logic and robust APIs.</p>
                 </article>
                 <article class="card">
                     <div class="card-icon">🎨</div>
-                    <h3>Modern Styling</h3>
-                    <p>Utilizing CSS variables and modern design tokens for a cohesive and professional look.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Clean Code</h3>
-                    <p>Optimized, semantic HTML and modular CSS built for speed and long-term maintainability.</p>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma-driven designs focused on intuitive and visually appealing interfaces.</p>
                 </article>
             </div>
         </section>
-       
-        <!-- Service -->
-     <section class="content-section" id="services">
-    <h2 class="section-title">Our Services</h2>
-    <div class="grid-container">
-        <article class="card service-card-1">
-            <div class="card-icon">💻</div>
-            <h3>Software Development</h3>
-            <p>Custom enterprise-grade software built to scale with your business needs.</p>
-        </article>
-        <article class="card service-card-2">
-            <div class="card-icon">🌐</div>
-            <h3>Website Designing</h3>
-            <p>Stunning, high-conversion websites with a focus on user experience and speed.</p>
-        </article>
-        <article class="card service-card-3">
-            <div class="card-icon">📊</div>
-            <h3>ERP Management</h3>
-            <p>Streamline your operations with integrated resource planning and data analytics.</p>
-        </article>
-    </div>
-</section>
 
+        <section class="section container" id="works">
+            <div class="section-header">
+                <h2 class="section-title">Selected Works</h2>
+                <a href="#" class="link">View All Projects</a>
+            </div>
+            <div class="grid">
+                <div class="project-card">Tech Dashboard</div>
+                <div class="project-card">EcoTrack App</div>
+                <div class="project-card">Luxe Commerce</div>
+            </div>
+        </section>
+
+        <section class="section container" id="contact">
+            <div class="contact-card">
+                <h2>Let's work together</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea placeholder="Message" rows="5"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-<!-- Conact us -->
-     <section class="cta-section" id="contact">
-      <p>Contact Us</p>
-      <button>Click</button>
-     </section>
-
-    <footer>
-
-         <div class="footer-container">
-
-   <div class="footer-column">
-
-      <h3>SATIC</h3>
-
-      <p>Frontend Intership Project</p>
-
-   </div>
-
-   <div class="footer-column">
-
-    <h4>Link</h4>
-
-    <ul>
-
-       <li><a href="#">Home</a></li>
-
-       <li><a href="#">About</a></li>
-
-       <li><a href="#">Services</a></li>
-
-       <li><a href="#">Contact</a></li>
-
-    </ul>
-
-   </div>
-
-   <div class="footer-column">
-
-    <h4>Resources</h4>
-
-    <ul>
-
-       <li><a href="#">GitHub</a></li>
-
-       <li><a href="#">Docs</a></li>
-
-       <li><a href="#">Support</a></li>
-
-    </ul>
-
-   </div>
-
-   <div class="footer-bottom">
-
-    © 2026 Hemant. All rights reserved.
-
-    </div>
-
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div>
+                <h3 class="logo">SATIC</h3>
+                <p>Frontend Internship Project</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Hemant. All rights reserved.
+        </div>
     </footer>
 
     <script src="script.js"></script>
